@@ -16,7 +16,7 @@ def fn_trayectoria_cubica(q0, qf, qdot0, qdotf, t0, tf, tspace):
     a0, a1, a2, a3 = LA.solve(mat_coeficientes, mat_independientes)
 
     # Generamos el vector de tiempo
-    t = np.arange(t0, tf + tspace, tspace)
+    t = np.arange(t0, tf, tspace)
 
     # Calculamos los vectores de posición, velocidad y aceleración
     q = a0 + a1 * t + a2 * t**2 + a3 * t**3
