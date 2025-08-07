@@ -35,7 +35,7 @@ def fn_trayectoria_recta_cuadratica(q0, qf, qdotdot_d, tf, tspace):
         qdot_arr.append(qdot)
         qdotdot_arr.append(qdotdot)
 
-    return np.array(q_arr), np.array(qdot_arr), np.array(qdotdot_arr), np.array(t_arr)
+    return q_arr, qdot_arr, qdotdot_arr, t_arr
 
 if __name__ == "__main__":
     q0 = 0.0
